@@ -14,3 +14,44 @@ body{
   color: #fff;
   min-height: 100vh;
 }
+
+
+/* header */
+.header{
+  background: #122331;
+  position: relative;
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.header a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.header ul{
+  list-style: none;
+}
+
+.logo{
+  font-size: 2rem;
+}
+
+.menu-items{
+  display: flex;
+  align-items: center;
+}
+
+.menu-items li{
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu-items li:hover{
+  background-color: #ff652f
+}
