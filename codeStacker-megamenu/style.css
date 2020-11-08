@@ -1,5 +1,4 @@
 /*globals*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap');
 
 * {
@@ -54,6 +53,34 @@ body{
 
 .menu-items li:hover{
   background-color: #ff652f
+}
+
+/* dropdown */
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  background: #122331;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-menu{
+  top: 34px;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* section */
