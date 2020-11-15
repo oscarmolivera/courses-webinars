@@ -116,6 +116,10 @@ body{
   justify-content: space-between;
 }
 
+.blog .content{
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .content .col{
   display: flex;
   flex-direction: column;
@@ -163,6 +167,13 @@ body{
   border-left: 1px solid #1a3246;
 }
 
+.content .col .read-more{
+  display: inline-block;
+  padding-top: 1rem;
+  color: #427dad;
+  transition: color 0.3s ease;
+}
+
 .col .mega-links li,
 .col .mega-links li a{
   padding: 0 1rem;
@@ -172,6 +183,10 @@ body{
   top: 50px;
   opacity: 1;
   visibility: visible;
+}
+
+.content .col .read-more:hover{
+  color: #ff652f;
 }
 
 /* section */
